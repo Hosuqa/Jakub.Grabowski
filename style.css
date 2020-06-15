@@ -1,0 +1,265 @@
+body {
+    color: #0B0C101;
+    background-color: rgb(75, 10, 24);
+    font-family: 'Times New Roman';
+}
+
+#container {
+    width: 1890px;
+    height: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#logotyp {
+    padding-top: 10px;
+    padding-right: 40px;
+}
+
+iframe {
+    padding-top: 50px;
+}
+
+#logo {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(185, 4, 44);
+    font-size: 150px;
+    width: 1890px;
+    height: 150px;
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+#content {
+    width: 1330px;
+    float: left;
+    background-color: rgb(185, 4, 44);
+    height: 820px;
+    margin-top: 40px;
+    margin-left: 300px;
+    text-align: center;
+}
+
+#nav {
+    margin-left: 20px;
+    float: left;
+    margin-top: 40px;
+    width: 225px;
+    height: 420px;
+    background-color: rgb(185, 4, 44);
+    position: fixed;
+}
+
+tr {
+    text-align: center;
+    padding: 10px;
+}
+
+td {
+    font-size: 30px;
+    height: 80px;
+    background-color: rgb(185, 4, 44));
+}
+
+th {
+    background-color: rgb(185, 4, 44);
+}
+
+td:hover {
+    background-color: rgb(112, 3, 27);
+}
+
+#main {
+    height: 80px;
+    background-color: rgb(185, 4, 44);
+    font-size: 35px;
+    text-align: center;
+    line-height: 70px;
+}
+
+#main:hover {
+    background-color: rgb(112, 3, 27);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.gallery {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 980px;
+}
+
+.mini {
+    width: 30px;
+    height: 50px;
+    float: left;
+    margin: 10px;
+}
+
+.opacity {
+    opacity: 0.60
+}
+
+.opacity-off,
+.hover-opacity-off:hover {
+    opacity: 1
+}
+
+.section {
+    margin-top: 16px!important;
+    margin-bottom: 16px!important
+}
+
+#slajdy1 {
+    margin-left: 390px;
+}
+
+ol {
+    list-style-position: inside;
+    font-size: 25px;
+}
+
+ul {
+    list-style-position: inside;
+    font-size: 25px;
+}
+
+li {
+    text-align: left;
+}
+
+p {
+    font-size: 25px;
+    text-align: left;
+    margin-left: 40px;
+}
+
+.foot {
+    width: 100%;
+    height: 20px;
+    background-color: rgb(185, 4, 44);
+    text-align: center;
+    clear: both;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    font-family: "Verdana";
+}
+
+.topnav {
+    background-color: rgb(185, 4, 44);
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.topnav a {
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 17px;
+    font-style: inherit;
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    #container {
+        width: 900px;
+        height: 800px;
+        margin-left: 2%;
+        margin-right: 4%;
+    }
+    #logotyp {
+        padding-top: 1px;
+        padding-right: 1px;
+    }
+    iframe {
+        padding-top: 10px;
+    }
+    #logo {
+        font-size: 90px;
+        width: 900px;
+        height: 150px;
+        text-align: center;
+        padding-bottom: 7%;
+    }
+    #content {
+        width: 600px;
+        float: center;
+        height: 820px;
+        margin-top: 20px;
+        margin-left: 10px;
+        text-align: center;
+    }
+    #nav {
+        margin-left: 10px;
+        float: left;
+        margin-top: 20px;
+        width: 210px;
+        height: 420px;
+    }
+    #foot {
+        width: 900px;
+    }
+    iframe {
+        width: 450px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #container {
+        width: 600px;
+        height: 800px;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    #logotyp {
+        padding-top: 1px;
+        padding-right: 0px;
+    }
+    iframe {
+        padding-top: 10px;
+    }
+    #logo {
+        font-size: 90px;
+        width: 600px;
+        height: 150px;
+        text-align: center;
+        padding-bottom: 7%;
+    }
+    #content {
+        width: 380px;
+        float: right;
+        height: 820px;
+        margin-top: 20px;
+        margin-left: 10px;
+        text-align: center;
+    }
+    #nav {
+        margin-left: 10px;
+        float: left;
+        margin-top: 20px;
+        width: 190px;
+        height: 420px;
+    }
+    iframe {
+        width: 300px;
+        height: 200px;
+    }
+    #slajdy1 {
+        width: 300px;
+        height: 200px;
+    }
+    #foot {
+        width: 600px;
+    }
+    #slajdy1 {
+        height: 300px;
+        width: 300px;
+    }
+}
+
+
+}

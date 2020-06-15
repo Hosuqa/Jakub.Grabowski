@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Warszawa</title>
+    <link rel="shortcut icon" href="img/warszawa.jpg">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="logo">
+            <a href="index.html"><img id="logotyp" src="img/logo.png"></a>Warszawa
+        </div>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="active">Strona Główna</a>
+            <a href="ankieta.html">Ankieta</a>
+            <a href="#foot">Do Stopki</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            </a>
+        </div>
+        <div id="nav">
+            <table>
+                <thead>
+                    <th>
+                        <h1>Linki Wewnętrzne</h1>
+                    </th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="Mapa.html">Mapa</a></td>
+
+                    </tr>
+                    <tr>
+                        <td><a href="Film.html">Film</a></td>
+
+                    </tr>
+                    <tr>
+                        <td><a href="Strona.html">Strona Miasta</a</td>
+                       
+                    </tr>
+                </tbody>
+            </table>
+            <div id="main">
+                <a href="index.html">Powrót</a>
+        </div>
+
+    </div>
+    <div id="content">
+        <h2 id="h2"><a href="https://www.um.warszawa.pl/">Strona Warszawy - kliknij</a></h2>
+        <h1 id="h1">Czesław Niemen-Sen o Warszawie</h1><br>
+        <audio controls><source src="img/Niemen.mp3" type="audio/mpeg"></audio>
+        <div id="slajdy1">
+            <div class="gallery" style="max-width:1000px"> <img class="photo photo1" src="img/wwa1.jpg" alt="obraz"> <img class="photo photo1" src="img/wwa2.jpg" alt="obraz"> <img class="photo photo1" src="img/wwa3.jpg" alt="obraz"> <img class="photo photo1" src="img/wwa4.jpg" alt="obraz">
+                <img class="photo photo1" src="img/wwa5.jpg" alt="obraz">
+                <div class="section">
+                    <div class="mini"> <img class="demo opacity hover-opacity-off" src="img/wwa1.jpg" alt="obraz" style="width:100%;cursor:pointer;margin:auto;" onclick="currentDiv(1)"> </div>
+                    <div class="mini"> <img class="demo opacity hover-opacity-off" src="img/wwa2.jpg" alt="obraz" style="width:100%;cursor:pointer;margin:auto;" onclick="currentDiv(2)"> </div>
+                    <div class="mini"> <img class="demo opacity hover-opacity-off" src="img/wwa3.jpg" alt="obraz" style="width:100%;cursor:pointer;margin:auto;" onclick="currentDiv(3)"> </div>
+                    <div class="mini"> <img class="demo opacity hover-opacity-off" src="img/wwa4.jpg" alt="obraz" style="width:100%;cursor:pointer;margin:auto;" onclick="currentDiv(4)"> </div>
+                    <div class="mini"> <img class="demo opacity hover-opacity-off" src="img/wwa5.jpg" alt="obraz" style="width:100%;cursor:pointer;margin:auto;" onclick="currentDiv(5)"> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="foot" id="foot">Jakub Grabowski 2tb</div>
+
+
+
+
+
+    </div>
+    <script>
+        function currentDiv(n) {
+            showDivs(slideIndex = n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("photo");
+            var dots = document.getElementsByClassName("demo");
+            if (n > x.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = x.length
+            }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace("opacity-off", "");
+            }
+            x[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += "opacity-off";
+        }
+        var slideIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("photo");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > x.length) {
+                slideIndex = 1
+            }
+            x[slideIndex - 1].style.display = "block";
+            setTimeout(carousel, 5000);
+        }
+    </script>
+</body>
+
+</html>

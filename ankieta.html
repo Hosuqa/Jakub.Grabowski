@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Warszawa</title>
+    <link rel="shortcut icon" href="img/warszawa.jpg">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="logo">
+            <a href="index.html"><img id="logotyp" src="img/logo.png"></a>Warszawa
+        </div>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="active">Strona Główna</a>
+            <a href="ankieta.html">Ankieta</a>
+            <a href="#foot">Do Stopki</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            </a>
+        </div>
+        <div id="nav">
+            <table>
+                <thead>
+                    <th>
+                        <h1>Linki Wewnętrzne</h1>
+                    </th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="Mapa.html">Mapa</a></td>
+
+                    </tr>
+                    <tr>
+                        <td><a href="Film.html">Film</a></td>
+
+                    </tr>
+                    <tr>
+                        <td><a href="Strona.html">Strona Miasta</a</td>
+                       
+                    </tr>
+                </tbody>
+            </table>
+            <div id="main">
+                <a href="index.html">Powrót</a>
+        </div>
+
+    </div>
+    <div id="content">
+        <br>
+        <label for="fname">Imię:</label><br>
+        <input type="text" id="fname" name="fname" value="Imię"><br>
+        <label for="lname">Nazwisko:</label><br>
+        <input type="text" id="lname" name="lname" value="Nazwisko"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" value="Email" required>
+        <br><br>
+        <label for="quantity2">Jak oceniasz stronę? (skala 1-10)</label><br><br>
+        <input type="number" id="quantity2" name="quantity2" min="1" max="10" required>
+        <br><br>
+        <button type="button" onclick="alert('Dziękujemy za wypełnienie ankiety!')">Wyślij ankietę</button>
+    </div>
+    <div class="foot" id="foot">Jakub Grabowski 2tb</div>
+
+
+
+
+
+    </div>
+</body>
+
+</html>
